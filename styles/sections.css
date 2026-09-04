@@ -13,7 +13,7 @@
   /* overflow: hidden; */
   position: relative;
 
-  figcaption{
+  figcaption {
     position: absolute;
     bottom: 0;
 
@@ -21,6 +21,39 @@
 
     &:has(h3) {
       padding: 12px;
+    }
+  }
+}
+
+section {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--stroke-color);
+    a {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 4px;
+      align-items: center;
+      p {
+        font: var(--span);
+      }
+
+      &:hover p {
+        color: var(--brand-color-light);
+      }
+
+      span {
+        background-image: url(../assets/icons/ArrowRight.svg);
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:hover span {
+        background-image: url(../assets/icons/ArrowRightHover.svg);
+      }
     }
   }
 }
