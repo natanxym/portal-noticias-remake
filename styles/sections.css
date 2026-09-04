@@ -1,0 +1,26 @@
+#featured {
+  /* grid-area: featured; */
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+.card {
+  /* border-radius: 4px; */
+  /* overflow: hidden; */
+  position: relative;
+
+  figcaption{
+    position: absolute;
+    bottom: 0;
+
+    padding: 24px;
+
+    &:has(h3) {
+      padding: 12px;
+    }
+  }
+}
