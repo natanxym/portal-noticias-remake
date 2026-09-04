@@ -1,0 +1,23 @@
+#primary {
+  justify-content: space-between;
+
+  div {
+    align-items: center;
+    gap: 8px;
+
+    h1 {
+      font-family: "Archivo Black", sans-serif;
+      font: 400 24px/24%;
+      color: var(--brand-color-light);
+    }
+  }
+}
+
+#secondary {
+  justify-content: space-between;
+  border-top: 1px solid var(--stroke-color);
+  border-bottom: 1px solid var(--stroke-color);
+  a{
+    font: var(--span);
+  }
+}
