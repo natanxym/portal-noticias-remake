@@ -57,3 +57,14 @@ section {
     }
   }
 }
+
+#ia {
+  figure {
+    gap: 16px;
+    
+    img {
+      height: 176px;
+      object-fit: cover;
+    }
+  }
+}
