@@ -61,10 +61,17 @@ section {
 #ia {
   figure {
     gap: 16px;
-    
+
+    grid-template-columns: 1fr 176px;
     img {
-      height: 176px;
       object-fit: cover;
     }
+  }
+}
+
+#more {
+  article {
+    grid-template-columns: 72px 1fr;
+    gap: 15px;
   }
 }
