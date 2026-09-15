@@ -1,35 +1,11 @@
-#featured {
-  /* grid-area: featured; */
-
-  img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-}
-
-.card {
-  /* border-radius: 4px; */
-  /* overflow: hidden; */
-  position: relative;
-
-  figcaption {
-    position: absolute;
-    bottom: 0;
-
-    padding: 24px;
-
-    &:has(h3) {
-      padding: 12px;
-    }
-  }
-}
-
 section {
   header {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--stroke-color);
+    padding-top: 12px;
+    color: var(--text-color-secondary);
+
     a {
       display: grid;
       grid-auto-flow: column;
@@ -58,20 +34,92 @@ section {
   }
 }
 
+#featured {
+  grid-area: featured;
+
+  img {
+    height: 100%;
+    border-radius: 4px;
+  }
+}
+
+.card {
+  /* border-radius: 4px; */
+  /* overflow: hidden; */
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    background: linear-gradient(180deg, transparent 0%, #020617 100%);
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+
+    padding: 24px;
+
+    &:has(h3) {
+      padding: 12px;
+    }
+  }
+}
+
+#weekly {
+  grid-area: weekly;
+
+  figure {
+    position: relative;
+    .content-tag {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+  }
+
+  div {
+    padding-block: 24px;
+    grid-template-columns: repeat(4, 292px);
+  }
+
+  h2 {
+    margin-top: 8px;
+  }
+}
+
 #ia {
+  grid-area: ia;
+
   figure {
     gap: 16px;
-
     grid-template-columns: 1fr 176px;
+    align-items: center;
+
     img {
+      aspect-ratio: 1/1;
       object-fit: cover;
     }
   }
 }
 
+#ads {
+  img {
+    height: 100%;
+    border-radius: 4px;
+  }
+}
+
 #more {
   article {
+    align-items: center;
     grid-template-columns: 72px 1fr;
     gap: 15px;
   }
+}
+
+aside {
+  grid-area: aside;
 }

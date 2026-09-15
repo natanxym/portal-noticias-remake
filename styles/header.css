@@ -1,5 +1,6 @@
 #primary {
   justify-content: space-between;
+  padding-block: 20px;
 
   div {
     align-items: center;
@@ -17,7 +18,9 @@
   justify-content: space-between;
   border-top: 1px solid var(--stroke-color);
   border-bottom: 1px solid var(--stroke-color);
+  padding-block: 14px;
   a{
     font: var(--span);
+    color: var(--text-color-secondary);
   }
 }
